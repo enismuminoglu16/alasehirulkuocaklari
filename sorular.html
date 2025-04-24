@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilgi Güvenliği Testi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .question {
+      margin-bottom: 20px;
+    }
+    .result {
+      font-weight: bold;
+      color: green;
+    }
+    .wrong {
+      background-color: #f8d7da;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 12px;
+    }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bilgi Güvenliği Testi</h1>
+  <form id="quizForm">
+    <div class="question" data-answer="C">
+      1. Aşağıdakilerden hangisi bilgi güvenliğinin temel ilkelerinden biridir?<br>
+      <label><input type="radio" name="q1" value="A"> A) Hız</label>
+      <label><input type="radio" name="q1" value="B"> B) Estetik</label>
+      <label><input type="radio" name="q1" value="C"> C) Gizlilik</label>
+      <label><input type="radio" name="q1" value="D"> D) Kullanılabilirlik</label>
+    </div>
+
+    <div class="question" data-answer="C">
+      2. Aşağıdakilerden hangisi siber tehdit örneği değildir?<br>
+      <label><input type="radio" name="q2" value="A"> A) Malware</label>
+      <label><input type="radio" name="q2" value="B"> B) Phishing</label>
+      <label><input type="radio" name="q2" value="C"> C) Firewall</label>
+      <label><input type="radio" name="q2" value="D"> D) DoS saldırısı</label>
+    </div>
+
+    <div class="question" data-answer="B">
+      3. Sosyal medya hesaplarının güvenliğini artırmak için hangi önlem alınmalıdır?<br>
+      <label><input type="radio" name="q3" value="A"> A) Şifreyi arkadaşınla paylaşmak</label>
+      <label><input type="radio" name="q3" value="B"> B) 2FA (iki faktörlü kimlik doğrulama) kullanmak</label>
+      <label><input type="radio" name="q3" value="C"> C) Aynı şifreyi her yerde kullanmak</label>
+      <label><input type="radio" name="q3" value="D"> D) Güvenlik duvarını kapatmak</label>
+    </div>
+
+    <div class="question" data-answer="A">
+      4. Dosya şifrelemek için kullanılan araçlardan biri aşağıdakilerden hangisidir?<br>
+      <label><input type="radio" name="q4" value="A"> A) WinRAR</label>
+      <label><input type="radio" name="q4" value="B"> B) Not Defteri</label>
+      <label><input type="radio" name="q4" value="C"> C) Chrome</label>
+      <label><input type="radio" name="q4" value="D"> D) Paint</label>
+    </div>
+
+    <div class="question" data-answer="D">
+      5. Aşağıdaki parolalardan hangisi daha güçlü kabul edilir?<br>
+      <label><input type="radio" name="q5" value="A"> A) 123456</label>
+      <label><input type="radio" name="q5" value="B"> B) qwerty</label>
+      <label><input type="radio" name="q5" value="C"> C) Enis2025</label>
+      <label><input type="radio" name="q5" value="D"> D) Gx9$eT#vP2@rLz</label>
+    </div>
+
+    <div class="question" data-answer="C">
+      6. Aşağıdakilerden hangisi güvenlik duvarının görevi değildir?<br>
+      <label><input type="radio" name="q6" value="A"> A) Ağ trafiğini izlemek</label>
+      <label><input type="radio" name="q6" value="B"> B) Yetkisiz erişimi önlemek</label>
+      <label><input type="radio" name="q6" value="C"> C) Dosya yedeklemek</label>
+      <label><input type="radio" name="q6" value="D"> D) Zararlı yazılım yayılımını engellemek</label>
+    </div>
+
+    <div class="question" data-answer="C">
+      7. "Bilgi", teknik anlamda ne anlama gelir?<br>
+      <label><input type="radio" name="q7" value="A"> A) Düşünce</label>
+      <label><input type="radio" name="q7" value="B"> B) Rastgele veri</label>
+      <label><input type="radio" name="q7" value="C"> C) İşlenmiş veri</label>
+      <label><input type="radio" name="q7" value="D"> D) Görüş</label>
+    </div>
+
+    <div class="question" data-answer="B">
+      8. Aşağıdakilerden hangisi siber saldırıya karşı alınabilecek bir önlem değildir?<br>
+      <label><input type="radio" name="q8" value="A"> A) Güncel antivirüs yazılımı kullanmak</label>
+      <label><input type="radio" name="q8" value="B"> B) Bilinmeyen eklentileri yüklemek</label>
+      <label><input type="radio" name="q8" value="C"> C) Güçlü şifreler kullanmak</label>
+      <label><input type="radio" name="q8" value="D"> D) Yazılım güncellemelerini yapmak</label>
+    </div>
+
+    <div class="question" data-answer="B">
+      9. Bilgileri yetkisiz kişilerin eline geçen biri öncelikle ne yapmalıdır?<br>
+      <label><input type="radio" name="q9" value="A"> A) Bilgisayarı kapatmalı</label>
+      <label><input type="radio" name="q9" value="B"> B) Şifrelerini değiştirmeli</label>
+      <label><input type="radio" name="q9" value="C"> C) Telefonu formatlamalı</label>
+      <label><input type="radio" name="q9" value="D"> D) Sosyal medyayı bırakmalı</label>
+    </div>
+
+    <div class="question" data-answer="C">
+      10. Dosya paylaşımı yaparken aşağıdakilerden hangisine dikkat edilmelidir?<br>
+      <label><input type="radio" name="q10" value="A"> A) Dosyayı masaüstüne taşımak</label>
+      <label><input type="radio" name="q10" value="B"> B) Sadece “paylaş” butonuna basmak</label>
+      <label><input type="radio" name="q10" value="C"> C) Yetki (izin) ayarlarını kontrol etmek</label>
+      <label><input type="radio" name="q10" value="D"> D) Paylaşım linkini herkese göndermek</label>
+    </div>
+
+    <button type="button" onclick="submitQuiz()">Testi Gönder</button>
+  </form>
+
+  <p class="result" id="result"></p>
+
+  <script>
+    function submitQuiz() {
+      let score = 0;
+      const questions = document.querySelectorAll('.question');
+
+      questions.forEach((question, index) => {
+        const correct = question.dataset.answer;
+        const selected = question.querySelector('input[type="radio"]:checked');
+        const labels = question.querySelectorAll('label');
+
+        labels.forEach(label => label.classList.remove('wrong'));
+
+        if (selected) {
+          if (selected.value === correct) {
+            score++;
+          } else {
+            selected.parentElement.classList.add('wrong');
+          }
+        }
+      });
+
+      document.getElementById('result').innerText = `Puanınız: ${score}/10`;
+    }
+  </script>
+</body>
+</html>
