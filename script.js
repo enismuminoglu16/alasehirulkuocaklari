@@ -27,6 +27,6 @@ function submitQuiz() {
     });
   
     const result = document.getElementById('result');
-    result.textContent = `Doğru sayısı: ${correctCount} / ${questions.length}`;
-  }
+    result.innerHTML = `Doğru sayısı: <span style="color: green;">${correctCount}</span> / ${questions.length}`;
+}
   
